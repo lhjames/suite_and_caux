@@ -2,10 +2,11 @@
 	background-size: cover;
 	object-fit: cover;
 	height: 30rem;
-	max-width: 100% !important;
+	width: 100% !important;
   background-position: center;
   padding: 150px 0;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 .banner > h1 {
   font-family: $headers;
