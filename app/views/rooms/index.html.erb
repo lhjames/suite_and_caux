@@ -4,15 +4,39 @@
 </div>
 
 <div class="col-4">
-	<% @rooms.first(1).each do |room| %>
-		<!-- <img src="" alt=""> -->
-		<p><%= room.name %></p>
-		<%= link_to "Découvrir la chambre", room_path(room) %>
+
+		<% @rooms.last(1).each do |room| %>
+		<div class="card_room">
+			<%= image_tag "petit-gite-chambre.jpg" %>
+			<h4><%= room.name %></h4>
+			<p>Idéal pour un week-end le long des plages normandes</p>
+			<div class="btn btn-outline-primary">
+				<% link_to "Découvrir le gîte", room_path(room) %>	
+			</div>
+		</div>
 	<% end %>
 
-		<% @rooms.first(1).each do |room| %>
-		<!-- <img src="" alt=""> -->
-		<p><%= room.name %></p>
-		<%= link_to "Découvrir la chambre", room_path(room) %>
+
+
+	<% @rooms.first(1).each do |room| %>
+		<div class="card_room">
+			<%= image_tag "salon.jpg" %>
+			<h4><%= room.name %></h4>
+			<p>Parfait pour découvrir la côte normande en famille</p>
+			<div class="btn btn)btn-outline-primary">
+				<%= link_to "Découvrir le gîte", room_path(room) %>
+			</div>
+		</div>	
+	<% end %>
+
+	<% @rooms.last(1).each do |room| %>
+		<div class="card_room">
+			<%= image_tag "petit-gite-chambre.jpg" %>
+			<h4><%= room.name %></h4>
+			<p>Idéal pour un week-end le long des plages normandes</p>
+			<div class="btn btn-outline-primary">
+				<% link_to "Découvrir le gîte", room_path(room) %>	
+			</div>
+		</div>
 	<% end %>
 </div>
