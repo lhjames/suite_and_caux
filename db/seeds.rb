@@ -9,5 +9,6 @@ puts "création des chambres..."
 
 room1 = Room.create!(name: 'grand_gite')
 room2 = Room.create!(name: "petit_gite")
+room3 = Room.create!(name: "chambre")
 
 puts "seed exécutée!"
