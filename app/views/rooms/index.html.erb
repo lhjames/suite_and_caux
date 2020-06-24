@@ -5,13 +5,13 @@
 
 <div class="col-12 d-flex flex-column align-items-center justify-content-center mb-5">
 	<div class="block-text__centered text-justify">
-		<h3>Le charme discret de la côte normande</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, consequatur. Tempora reiciendis vero iste, fuga ab molestias debitis voluptatem hic obcaecati quas dolore voluptates sapiente a atque suscipit beatae. Quam!</p>
+		<h3 class="mb-5">Le charme discret de la côte normande</h3>
+		<p class="mr-5 ml-5 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, consequatur. Tempora reiciendis vero iste, fuga ab molestias debitis voluptatem hic obcaecati quas dolore voluptates sapiente a atque suscipit beatae. Quam!</p>
 	</div>
-	<%= image_tag "mer1.jpg", class: 'img-round' %>
+	<%= image_tag "mer1.jpg", class: 'img-round mt-3' %>
 </div>
 
-<div class="col-4 mr-3">
+<div class="col-12">
 	<% @rooms.first(1).each do |room| %>
 		<div class="card_room rounded">
 			<%= link_to room_path(room), class: "" do %>

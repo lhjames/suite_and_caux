@@ -1,12 +1,14 @@
 .block-text__centered {
 	color: $light-font;
 	font-family: $body;
-	margin: 10px 40px 10px 40px;
+	// margin: 10px 40px 10px 40px;
 	font-weight: 200;
+	font-size: .8em;
 	h3 {
 		font-family: $headers;
 		color: $dark-font;
 		text-align: center;
+		font-size: 1.4em;
 	}
 }
 .img-round {
