@@ -3,15 +3,22 @@
   <h3 class='text-center'>Gîtes de charme sur la côte normande</h3>
 </div>
 
-<div class="col-4">
+<div class="col-12 d-flex flex-column align-items-center justify-content-center mb-5">
+	<div class="block-text__centered text-justify">
+		<h3>Le charme discret de la côte normande</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, consequatur. Tempora reiciendis vero iste, fuga ab molestias debitis voluptatem hic obcaecati quas dolore voluptates sapiente a atque suscipit beatae. Quam!</p>
+	</div>
+	<%= image_tag "mer1.jpg", class: 'img-round' %>
+</div>
 
+<div class="col-4 mr-3">
 	<% @rooms.first(1).each do |room| %>
-		<div class="card_room">
+		<div class="card_room rounded">
 			<%= link_to room_path(room), class: "" do %>
-				<%= image_tag "salon.jpg" %>
+				<%= image_tag "salon.jpg", class: "rounded" %>
 				<div class="card-details d-flex flex-column align-items-center justify-content-center">
 					<h4><%= room.name %></h4>
-					<p>Parfait pour découvrir la côte normande en famille</p>
+					<p>Parfait pour explorer la côte normande en famille</p>
 				</div>
 				<%= link_to "Découvrir le gîte", room_path(room), class: "btn btn-outline-primary sm mb-1" %>
 			<% end %>
@@ -19,9 +26,9 @@
 	<% end %>
 
 	<% @rooms.last(1).each do |room| %>
-		<div class="card_room">
+		<div class="card_room rounded">
 			<%= link_to room_path(room), class: "" do %>
-				<%= image_tag "petit-gite-chambre.jpg" %>
+				<%= image_tag "petit-gite-chambre.jpg", class: "rounded" %>
 				<div class="card-details d-flex flex-column align-items-center justify-content-center">
 					<h4><%= room.name %></h4>
 					<p>Idéal pour un week-end le long des plages normandes</p>
@@ -30,5 +37,4 @@
 			<% end %>
 		</div>
 	<% end %>
-
 </div>

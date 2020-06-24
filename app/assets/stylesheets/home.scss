@@ -1,0 +1,16 @@
+.block-text__centered {
+	color: $light-font;
+	font-family: $body;
+	margin: 10px 40px 10px 40px;
+	font-weight: 200;
+	h3 {
+		font-family: $headers;
+		color: $dark-font;
+		text-align: center;
+	}
+}
+.img-round {
+	border-radius: 50%;
+	max-width: 100%;
+	height: 15em;
+}
