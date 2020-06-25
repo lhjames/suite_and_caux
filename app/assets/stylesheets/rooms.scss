@@ -1,3 +1,26 @@
-// Place all the styles related to the Rooms controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+
+
+
+.grand_gite {
+  background-image: url(grand-gite-chambre2.jpg);
+  height: 15em;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.petit_gite {
+	background-image: url(petit-gite-chambre.jpg);
+  height: 15em;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.chambre {
+	background-image: url(chambre-mosaique.jpg);
+  height: 15em;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

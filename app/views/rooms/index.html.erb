@@ -3,18 +3,21 @@
   <h3 class='text-center'>Gîtes de charme sur la côte normande</h3>
 </div>
 
-<div class="col-12 d-flex flex-column align-items-center justify-content-center mb-5">
-	<div class="block-text__centered text-justify">
-		<h3 class="mb-5">Le charme discret de la côte normande</h3>
-		<p class="mr-5 ml-5 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, consequatur. Tempora reiciendis vero iste, fuga ab molestias debitis voluptatem hic obcaecati quas dolore voluptates sapiente a atque suscipit beatae. Quam!</p>
+<div class="container-fluid">
+<div class="row align-items-center justify-content-center">
+	<div class="details col-sm-12 col-lg-4 mb-5">
+		<div class="block-text__centered text-justify">
+			<h3 class="mb-5">Le charme discret de la côte normande</h3>
+			<p class="mr-5 ml-5 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, consequatur. Tempora reiciendis vero iste, fuga ab molestias debitis voluptatem hic obcaecati quas dolore voluptates sapiente a atque suscipit beatae. Quam!</p>
+		</div>
+		<%= image_tag "mer1.jpg", class: 'img-round mt-3' %>
 	</div>
-	<%= image_tag "mer1.jpg", class: 'img-round mt-3' %>
 </div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-sm-12 col-lg-4 ml-1">
-			<% @rooms.first(1).each do |room| %>
+
+	<div class="row align-items-center justify-content-center">
+		<% @rooms.first(1).each do |room| %>
+			<div class="col-sm-12 col-lg-4 ml-1">
 				<div class="card_room rounded">
 					<%= link_to room_path(room), class: "" do %>
 						<%= image_tag "salon.jpg", class: "rounded" %>
@@ -47,9 +50,8 @@
 					<% end %>
 				</div>
 			<% end %>
-
 		</div>
-		
+
 	</div>
 	
 </div>
