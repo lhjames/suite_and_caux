@@ -33,7 +33,7 @@
 			<% @rooms.drop(1).each do |room| %>
 				<div class="card_room rounded">
 					<%= link_to room_path(room), class: "" do %>
-						<% if room.name.length > 7 %>
+						<% if room.name == 'Le petit gîte' %>
 							<%= image_tag "petit-gite-chambre.jpg", class: "rounded" %>
 						<% else %>
 							<%= image_tag "chambre3.jpg", class: "rounded" %>

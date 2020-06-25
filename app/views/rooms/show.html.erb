@@ -11,6 +11,18 @@
 
 <h4><%= @room.tagline %></h4>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dolorum commodi nostrum eos cumque sit neque similique facere, voluptates rerum, accusantium voluptatibus, itaque delectus quidem non doloribus reiciendis consequuntur. Non sint sequi eligendi! Exercitationem saepe amet commodi illum repellendus quibusdam!</p>
+<% if @room.name == 'Le grand gîte' %>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dolorum commodi nostrum eos cumque sit neque similique facere, voluptates rerum, accusantium voluptatibus, itaque delectus quidem non doloribus reiciendis consequuntur. Non sint sequi eligendi! Exercitationem saepe amet commodi illum repellendus quibusdam!</p>
+<% elsif @room.name == 'Le petit gîte' %>
+	<p>Lorem ipsum dolor sit amet.</p>
+<% else %>
+	<p>Lorem</p>
+<% end %>
+
+<h5><%= @room.rate %></h5>
+<p>Possibilité de prix à la semaine</p>
+
+<h5>Réserver</h5>
+
 
 
