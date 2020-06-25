@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "création des chambres..."
 
-room1 = Room.create!(name: 'grand_gite')
-room2 = Room.create!(name: "petit_gite")
-room3 = Room.create!(name: "chambre")
+room1 = Room.create!(name: 'grand_gite', tagline: 'Un gîte au calme, idéal pour un week-end à deux')
+room2 = Room.create!(name: "petit_gite", tagline: 'Un grand gîte familial, entièrement équipé')
+room3 = Room.create!(name: "chambre", tagline: 'Une suite spacieuse au cœur de la verdure')
 
 puts "seed exécutée!"
