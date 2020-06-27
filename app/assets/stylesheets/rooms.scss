@@ -1,26 +1,26 @@
 .room_container h5, h3, h4 {
-	font-family: $headers;
-  color: $light-font;
+	font-family: 'Playfair Display', serif;
+  color: #c5c3c6;
   text-align: center;
   font-size: 1.4em;
 }
 #main_title {
-	font-family: $headers;
+	font-family: 'Playfair Display', serif;
 	font-size: .7em;
 	font-weight: lighter;
-	color: $light-font;
+	color: #c5c3c6;
 	margin-bottom: 1em;
 }
 .room_name {
 	letter-spacing: .2em;
 	margin-bottom: 1em;
 	margin-top: 1em;
-	color: $dark-font;
+	color: #717171;
 	font-weight: 400;
 }
 p {
-	font-family: $body;
-	color: $dark-font;
+	font-family: 'Lato', sans-serif;
+	color: #717171;
 	text-align: center;
 }
 .room_info {
