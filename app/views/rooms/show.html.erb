@@ -1,28 +1,30 @@
 <!-- <h1 class="<%#= @room.name %>">HELLO <%#= room.name %></h1>
  -->
-<h5 class='main_title'>Maison Esperluette</h5>
+ <div class="room_container container">
+	<h5 class='text-center mt-3' id="main_title">Maison Esperluette</h5>
 
+	<h3 class='room_name text-center text-uppercase'><%= @room.name %></h3>
 
-<h3 class='room_name'><%= @room.name %></h3>
+	<div class="room_banner">
+		<div class="<%= @room.name %>"></div>
+	</div>
 
-<div class="room_banner">
-	<div class="<%= @room.name %>"></div>
-</div>
+	<h4><%= @room.tagline %></h4>
 
-<h4><%= @room.tagline %></h4>
+	<div class="room_info">
+		<% if @room.name == 'Le grand gîte' %>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dolorum commodi nostrum eos cumque sit neque similique facere, voluptates rerum, accusantium voluptatibus, itaque delectus quidem non doloribus reiciendis consequuntur. Non sint sequi eligendi! Exercitationem saepe amet commodi illum repellendus quibusdam!</p>
+		<% elsif @room.name == 'Le petit gîte' %>
+			<p>Lorem ipsum dolor sit amet.</p>
+		<% else %>
+			<p>Lorem</p>
+		<% end %>
+	</div>
 
-<% if @room.name == 'Le grand gîte' %>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dolorum commodi nostrum eos cumque sit neque similique facere, voluptates rerum, accusantium voluptatibus, itaque delectus quidem non doloribus reiciendis consequuntur. Non sint sequi eligendi! Exercitationem saepe amet commodi illum repellendus quibusdam!</p>
-<% elsif @room.name == 'Le petit gîte' %>
-	<p>Lorem ipsum dolor sit amet.</p>
-<% else %>
-	<p>Lorem</p>
-<% end %>
+	<h5><%= @room.rate %>€ la nuitée</h5>
+	<p class="mt-1 mb-5" id="weekly_rate">Possibilité de prix à la semaine</p>
 
-<h5><%= @room.rate %></h5>
-<p>Possibilité de prix à la semaine</p>
-
-<h5>Réserver</h5>
-
+	<h5>Réserver</h5>
+ </div>
 
 

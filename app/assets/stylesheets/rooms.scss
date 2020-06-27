@@ -1,26 +1,65 @@
+.room_container h5, h3, h4 {
+	font-family: $headers;
+  color: $light-font;
+  text-align: center;
+  font-size: 1.4em;
+}
+.room_container {
+	h5 {
+		font-weight: lighter;
+	}
+}
+.room_name {
+	letter-spacing: .2em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	color: $dark-font;
+}
+#main_title {
+	font-family: $headers;
+	font-size: .7em;
+	font-weight: lighter;
+	color: $light-font;
+	margin-bottom: 1em;
+}
+p {
+	font-family: $body;
+	color: $dark-font;
+	text-align: center;
+}
+.room_info {
+	margin-bottom: 2.5em;
+}
+#weekly_rate {
+	font-style: italic;
+	font-weight: lighter;
+}
 
 
-
-
-
-
+// ROOM BANNERS MANAGER
 .grand {
   background-image: url(grand-gite-chambre2.jpg);
-  height: 15em;
-  background-size: contain;
-  background-repeat: no-repeat;
+  height: 30em;
+  background-size: cover;
+  width: 100% !important;
+  background-position: center;
+  margin-bottom: 2em;
 }
 
 .petit {
 	background-image: url(petit-gite-chambre.jpg);
-  height: 15em;
-  background-size: contain;
-  background-repeat: no-repeat;
+  height: 30em;
+  background-size: cover;
+  width: 100% !important;
+  background-position: bottom;
+  margin-bottom: 2em;
 }
 
 .chambre {
 	background-image: url(chambre-mosaique.jpg);
-  height: 15em;
-  background-size: contain;
-  background-repeat: no-repeat;
+	height: 30em;
+  background-size: cover;
+  width: 100% !important;
+  background-position: center;
+  margin-bottom: 2em;
 }
