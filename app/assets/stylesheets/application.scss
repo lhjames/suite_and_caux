@@ -3,7 +3,9 @@
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
+// @import "bootstrap-sprockets";
 @import "config/bootstrap_variables";
+@import "bootstrap";
 
 // External libraries
 
@@ -11,4 +13,5 @@
 @import "pages";
 @import "home";
 @import 'rooms';
-@import "components/index"
+@import "components/index";
+@import 'contact'

@@ -12,10 +12,10 @@ class ContactController < ApplicationController
         # re-initialize Contact object for cleared form
         @contact = Contact.new
         format.html { render 'index'}
-        format.js   { flash.now[:success] = @message = "Thank you for your message. I'll get back to you soon!" }
+        format.js   { flash.now[:success] = @message = "Merci pour votre message. Nous revenons vers vous au plus vite." }
       else
         format.html { render 'index' }
-        format.js   { flash.now[:error] = @message = "Message did not send." }
+        format.js   { flash.now[:error] = @message = "Le message n'a pas pu être envoyé" }
       end
     end
   end
