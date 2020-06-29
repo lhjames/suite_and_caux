@@ -99,6 +99,10 @@ Rails.application.configure do
 #   :enable_starttls_auto => true
 # }
 
+config.action_mailer.delivery_method = :smtp
+host = 'suite-and-caux.herokuapp.com'
+config.action_mailer.default_url_options = { host: host }
+
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors= true
   config.action_mailer.delivery_method = :smtp
@@ -110,7 +114,7 @@ Rails.application.configure do
     password:              ENV["GMAIL_PASSWORD"],
     authentication:      'plain',
     enable_starttls_auto: true  }
-    
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
