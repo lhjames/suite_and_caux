@@ -20,7 +20,7 @@
 			<div class="col-sm-12 col-lg-4 ml-1">
 				<div class="card_room rounded">
 					<%= link_to room_path(room), class: "" do %>
-						<%= image_tag "salon.jpg", class: "rounded" %>
+						<%= image_tag "grand-gite-chambre.jpg", class: "rounded" %>
 						<div class="card-details d-flex flex-column align-items-center justify-content-center">
 							<h4><%= room.name %></h4>
 							<p>Parfait pour explorer la côte normande en famille</p>
@@ -34,7 +34,7 @@
 				<div class="card_room rounded">
 					<%= link_to room_path(room), class: "" do %>
 						<% if room.name == 'Le petit gîte' %>
-							<%= image_tag "petit-gite-chambre.jpg", class: "rounded" %>
+							<%= image_tag "facade2.jpg", class: "rounded" %>
 						<% else %>
 							<%= image_tag "chambre3.jpg", class: "rounded" %>
 						<% end %>
