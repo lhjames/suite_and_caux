@@ -16,7 +16,7 @@ Rails.application.configure do
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
-  # config.require_master_key = true
+  config.require_master_key = true
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
@@ -86,18 +86,6 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
-#   config.action_mailer.perform_deliveries = true
-#   config.action_mailer.raise_delivery_errors= true
-#   config.action_mailer.delivery_method = :smtp
-# ActionMailer::Base.smtp_settings = {
-#   :user_name => 'SENDGRID_USERNAME',
-#   :api_key => 'SENDGRID_API_KEY',
-#   :domain => 'suite-and-caux.herokuapp.com',
-#   :address => 'smtp.sendgrid.net',
-#   :port => 465,
-#   :authentication => :plain,
-#   :enable_starttls_auto => true
-# }
 
 host = 'https://suite-and-caux.herokuapp.com/'
 config.action_mailer.default_url_options = { host: host }
