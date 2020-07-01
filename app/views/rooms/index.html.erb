@@ -22,10 +22,10 @@
 					<%= link_to room_path(room), class: "" do %>
 						<%= image_tag "grand-gite-chambre.jpg", class: "rounded" %>
 						<div class="card-details d-flex flex-column align-items-center justify-content-center">
-							<h4><%= room.name %></h4>
-							<p>Parfait pour explorer la côte normande en famille</p>
+							<h4 class="mb-2"><%= room.name %></h4>
+							<p class="mb-2">Parfait pour explorer la côte normande en famille</p>
 						</div>
-						<%= link_to "Découvrir le gîte", room_path(room), class: "btn btn-outline-primary sm mb-1" %>
+						<%= link_to "Découvrir le gîte", room_path(room), class: "btn btn-outline-primary sm mb-3" %>
 					<% end %>
 				</div>
 			<% end %>
@@ -39,14 +39,14 @@
 							<%= image_tag "chambre3.jpg", class: "rounded" %>
 						<% end %>
 						<div class="card-details d-flex flex-column align-items-center justify-content-center">
-							<h4><%= room.name %></h4>
+							<h4 class="mb-2"><%= room.name %></h4>
 							<% if room.name.length > 7 %>
-								<p>Idéal pour un week-end le long des plages normandes</p>
+								<p class="mb-3">Idéal pour un week-end le long des plages normandes</p>
 							<% else %>
-								<p>Une grande suite au calme</p>
+								<p class="mb-3">Une grande suite au calme</p>
 							<% end %>
 						</div>
-						<%= link_to "Découvrir le gîte", room_path(room), class: "btn btn-outline-primary sm mb-1" %>
+						<%= link_to "Découvrir le gîte", room_path(room), class: "btn btn-outline-primary sm mb-3" %>
 					<% end %>
 				</div>
 			<% end %>
