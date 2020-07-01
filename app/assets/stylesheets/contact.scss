@@ -1,6 +1,13 @@
-.contact-form-text-area {
-  color: black;
+.form_container label {
+	font-family: 'Playfair Display', serif;
+  color: #c5c3c6;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 400;
 }
+
+
+//ALERT STYLES
 .hidden { display: none; }
 .alert-error {
 background-color: #f2dede;
