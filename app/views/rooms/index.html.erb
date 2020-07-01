@@ -1,57 +1,59 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path 'facade1.jpg'%>)">
-  <h1 class='font-weight-light'>Maison Esperluette</h1>
-  <h3 class='text-center'>Gîtes de charme sur la côte normande</h3>
-</div>
-
-<div class="container-fluid">
-<div class="row align-items-center justify-content-center">
-	<div class="details col-sm-12 col-lg-4 mb-5">
-		<div class="block-text__centered text-justify">
-			<h3 class="mb-5">Le charme discret de la côte normande</h3>
-			<p class="mr-5 ml-5 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, consequatur. Tempora reiciendis vero iste, fuga ab molestias debitis voluptatem hic obcaecati quas dolore voluptates sapiente a atque suscipit beatae. Quam!</p>
-		</div>
-		<%= image_tag "mer1.jpg", class: 'img-round mt-3' %>
+<div class="home_container">
+	<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path 'facade1.jpg'%>)">
+	  <h1 class='font-weight-light'>Maison Esperluette</h1>
+	  <h3 class='text-center'>Gîtes de charme sur la côte normande</h3>
 	</div>
-</div>
 
-
+	<div class="container-fluid">
 	<div class="row align-items-center justify-content-center">
-		<% @rooms.first(1).each do |room| %>
-			<div class="col-sm-12 col-lg-4 ml-1">
-				<div class="card_room rounded">
-					<%= link_to room_path(room), class: "" do %>
-						<%= image_tag "grand-gite-chambre.jpg", class: "rounded" %>
-						<div class="card-details d-flex flex-column align-items-center justify-content-center">
-							<h4 class="mb-2"><%= room.name %></h4>
-							<p class="mb-2">Parfait pour explorer la côte normande en famille</p>
-						</div>
-						<%= link_to "Découvrir le gîte", room_path(room), class: "btn btn-outline-primary sm mb-3" %>
-					<% end %>
-				</div>
-			<% end %>
-
-			<% @rooms.drop(1).each do |room| %>
-				<div class="card_room rounded">
-					<%= link_to room_path(room), class: "" do %>
-						<% if room.name == 'Le petit gîte' %>
-							<%= image_tag "facade2.jpg", class: "rounded" %>
-						<% else %>
-							<%= image_tag "chambre3.jpg", class: "rounded" %>
-						<% end %>
-						<div class="card-details d-flex flex-column align-items-center justify-content-center">
-							<h4 class="mb-2"><%= room.name %></h4>
-							<% if room.name.length > 7 %>
-								<p class="mb-3">Idéal pour un week-end le long des plages normandes</p>
-							<% else %>
-								<p class="mb-3">Une grande suite au calme</p>
-							<% end %>
-						</div>
-						<%= link_to "Découvrir le gîte", room_path(room), class: "btn btn-outline-primary sm mb-3" %>
-					<% end %>
-				</div>
-			<% end %>
+		<div class="details col-sm-12 col-lg-4 mb-5">
+			<div class="block-text__centered text-justify">
+				<h3 class="mb-5">Le charme discret de la côte normande</h3>
+				<p class="mr-5 ml-5 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, consequatur. Tempora reiciendis vero iste, fuga ab molestias debitis voluptatem hic obcaecati quas dolore voluptates sapiente a atque suscipit beatae. Quam!</p>
+			</div>
+			<%= image_tag "mer1.jpg", class: 'img-round mt-3' %>
 		</div>
-
 	</div>
-	
+
+
+		<div class="row align-items-center justify-content-center">
+			<% @rooms.first(1).each do |room| %>
+				<div class="col-sm-12 col-lg-4 ml-1">
+					<div class="card_room rounded">
+						<%= link_to room_path(room), class: "" do %>
+							<%= image_tag "grand-gite-chambre.jpg", class: "rounded" %>
+							<div class="card-details d-flex flex-column align-items-center justify-content-center">
+								<h4 class="mb-2"><%= room.name %></h4>
+								<p class="mb-2">Parfait pour explorer la côte normande en famille</p>
+							</div>
+							<%= link_to "Découvrir le gîte", room_path(room), class: "btn btn-outline-primary sm mb-3" %>
+						<% end %>
+					</div>
+				<% end %>
+
+				<% @rooms.drop(1).each do |room| %>
+					<div class="card_room rounded">
+						<%= link_to room_path(room), class: "" do %>
+							<% if room.name == 'Le petit gîte' %>
+								<%= image_tag "facade2.jpg", class: "rounded" %>
+							<% else %>
+								<%= image_tag "chambre3.jpg", class: "rounded" %>
+							<% end %>
+							<div class="card-details d-flex flex-column align-items-center justify-content-center">
+								<h4 class="mb-2"><%= room.name %></h4>
+								<% if room.name.length > 7 %>
+									<p class="mb-3">Idéal pour un week-end le long des plages normandes</p>
+								<% else %>
+									<p class="mb-3">Une grande suite au calme</p>
+								<% end %>
+							</div>
+							<%= link_to "Découvrir le gîte", room_path(room), class: "btn btn-outline-primary sm mb-3" %>
+						<% end %>
+					</div>
+				<% end %>
+			</div>
+
+		</div>
+		
+	</div>
 </div>
