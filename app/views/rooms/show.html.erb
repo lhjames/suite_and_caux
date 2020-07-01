@@ -1,6 +1,4 @@
-<!-- <h1 class="<%#= @room.name %>">HELLO <%#= room.name %></h1>
- -->
- <div class="room_container container">
+<div class="room_container container">
 	<h5 class='text-center mt-3' id="main_title">Maison Esperluette</h5>
 
 	<h3 class='room_name text-center text-uppercase'><%= @room.name %></h3>
@@ -29,7 +27,7 @@
 	<h5><%= @room.rate %>€ la nuitée</h5>
 	<p class="mt-1 mb-5" id="weekly_rate">Possibilité de prix à la semaine</p>
 
-	<h5>Réserver</h5>
+	<%= link_to "Réserver", contact_index_path, class: "btn mb-1" %>
  </div>
 
 
