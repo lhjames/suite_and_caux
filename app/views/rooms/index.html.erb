@@ -39,13 +39,13 @@
 				<div class="card_room rounded">
 					<%= link_to room_path(room), class: "" do %>
 						<% if room.name == 'Le petit gîte' %>
-							<%= image_tag "jardin1.jpg", class: "rounded" %>
+							<%= image_tag "petit-gite-fenetre.jpg", class: "rounded" %>
 						<% else %>
 							<%= image_tag "chambre3.jpg", class: "rounded" %>
 						<% end %>
 						<div class="card-details d-flex flex-column align-items-center justify-content-center">
 							<h4 class="mb-2"><%= room.name %></h4>
-							<% if room.name.length > 7 %>
+							<% if room.name == 'Le petit gîte' %>
 								<p class="mb-3">Idéal pour un week-end le long des plages normandes</p>
 							<% else %>
 								<p class="mb-3">Une grande suite au calme</p>
