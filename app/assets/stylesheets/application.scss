@@ -1,13 +1,14 @@
 @import "bootstrap";
+// @import "bootstrap-sprockets";
 
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
-// @import "bootstrap-sprockets";
 @import "config/bootstrap_variables";
-@import "bootstrap";
 
 // External libraries
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
 
 // Your CSS partials
 @import "pages";
