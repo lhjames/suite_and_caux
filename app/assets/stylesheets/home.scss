@@ -1,12 +1,6 @@
 .block-text__centered {
 	font-weight: 200;
 	font-size: 1em;
-	h3 {
-		font-family: 'Playfair Display', serif;
-		color: #717171;
-		text-align: center;
-		font-size: 1.4em;
-	}
 }
 .img-round {
 	border-radius: 50%;
@@ -22,4 +16,9 @@
 .home_container {
 	min-height: 100vh;
 }
-
+.home-title__dark {
+	font-family: 'Playfair Display', serif;
+	color: #717171;
+	text-align: center;
+	font-size: 1.4em;
+}
