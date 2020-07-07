@@ -1,9 +1,18 @@
-// .carousel {
-//   width:20rem;
-//   height:10rem;
-// }
-
 .carousel-pic {
   border-radius: 10px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.carousel-text {
+	font-size: 1rem;
+	font-family: 'Lato', sans-serif;
+  color: #717171;
+  font-weight: lighter;
+}
+.review {
+	h5 {
+	font-family: 'Playfair Display', serif;
+	color: #717171;
+	text-align: center;
+	font-size: 1em; 
+	}
 }
