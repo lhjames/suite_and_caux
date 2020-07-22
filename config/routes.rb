@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root to: 'rooms#index'
   resources :rooms
   resources :contact
+  resources :maps
 end
