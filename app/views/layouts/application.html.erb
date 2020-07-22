@@ -4,6 +4,14 @@
     <title>La Maison Esperluette</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="3v6dyrwRoiYcwj88bmhGzKLYhbUxFEB-yAyKwm6r32Q" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script>
+       window.jQuery || document.write('<script src="/path/to/your/jquery"><\/script>');
+    </script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <%= csrf_meta_tags %>
@@ -11,6 +19,7 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
