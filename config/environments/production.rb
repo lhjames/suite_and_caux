@@ -103,7 +103,7 @@ config.action_mailer.default_options = {from: 'lucille.james00@gmail.com'}
     user_name:           ENV["GMAIL_USERNAME"],
     password:              ENV["GMAIL_PASSWORD"],
     authentication:      'plain',
-    enable_starttls_auto: true  }
+    enable_starttls_auto: true }
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
