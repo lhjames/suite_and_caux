@@ -1,7 +1,35 @@
-<h1>HELLO, ITS ME</h1>
+<div class="container">
+	<h1 class="home-title__dark text-center mt-5 mb-5">Explorez les merveilles de la côte d'Albâtre</h1>
 
 	<div id="map"
-     style="width: 100%; height: 600px;"
+     style="width: 100%; height: 450px;"
      data-markers="<%= @markers.to_json %>"
      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
+
+  <div class="map-grid">
+	  <div class="row mt-5 mb-2">
+	  	<div class="col-sm">
+	  		<%= image_tag "mer1.jpg", class: 'd-block w-100' %>
+	  	</div>
+	  	<div class="col-sm text-center">
+	  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At magni culpa maxime doloremque laudantium, velit consequuntur amet, ipsam eveniet esse placeat deserunt, facere aspernatur? Quos placeat quibusdam deleniti est quae!</p>
+	  	</div>
+	  </div>
+	  <div class="row mb-5">
+	  	<div class="col-sm">
+	  		<%= image_tag "mer1.jpg", class: 'd-block w-100' %>
+	  	</div>
+	  	<div class="col-sm">
+	  		<%= image_tag "mer1.jpg", class: 'd-block w-100' %>
+	  	</div>
+	  	<div class="col-sm">
+	  		<%= image_tag "mer1.jpg", class: 'd-block w-100' %>
+	  	</div>
+	  </div>	
+  </div>
+
+
+
+</div>
+

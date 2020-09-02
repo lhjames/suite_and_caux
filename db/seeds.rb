@@ -11,6 +11,8 @@ puts "création des chambres..."
 # room2 = Room.create!(name: "Le petit gîte", tagline: 'Un gîte au calme, idéal pour un week-end à deux', rate: '60')
 # room3 = Room.create!(name: "La chambre", tagline: 'Une suite spacieuse au cœur de la verdure', rate: '90')
 
-maison = Map.create!(name: 'Maison Esperluette', address: '5 rue du champ de foire, Cany-Barville')
+# maison = Map.create!(name: 'Maison Esperluette', address: '5 rue du champ de foire, Cany-Barville')
+plage1 = Map.create!(name: 'Plage de Veules-les-Roses', address: 'plage de Veules-les-Roses')
+plage2 = Map.create!(name: 'Plage de Veulettes-sur-Mer', address: '37 Digue Jean Corruble, 76450 Veulettes-sur-Mer')
 
 puts "seed exécutée!"
