@@ -1,8 +1,9 @@
 class MapsController < ApplicationController
   def index
 
-    @maps = Map.geocoded
-    @markers = @maps.map do |map|
+    @maps = Map.all
+
+    @markers = @maps.geocoded.map do |map|
       {
         lat: map.latitude,
         lng: map.longitude
