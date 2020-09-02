@@ -6,7 +6,8 @@ class MapsController < ApplicationController
     @markers = @maps.geocoded.map do |map|
       {
         lat: map.latitude,
-        lng: map.longitude
+        lng: map.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: { map: map })
       }
     end
   end
