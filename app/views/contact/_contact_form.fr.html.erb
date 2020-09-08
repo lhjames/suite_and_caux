@@ -1,0 +1,48 @@
+<div class="contact_container d-flex flex-column justify-content-center align-items-center mr-3 ml-3 mt-3">
+  <div class="contact_details">
+
+
+    <p class='mb-5'>Vous souhaitez connaître les dates de réservation disponibles ? Des questions sur les gîtes ?<br>N'hésitez pas à nous contacter !</p>
+
+    <h4>Par téléphone</h4>
+    <p class='mb-5'>06.30.89.59.82</p>
+
+    <h4>Par mail</h4>  
+  </div>
+
+  <div class="form_container">
+    <%= form_for @contact, url: contact_index_path, remote: true do |f| %>
+    <div class="form-group">
+      <%= f.label :nom %></br>
+      <%= f.text_field  :name, required: true, class: "form-group" %></br>
+
+      <%= f.label :email %></br>
+
+      <%= f.text_field :email, required: true, class: "form-group" %></br>
+
+      <%= f.label :message %></br>
+      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "form-group",
+          placeholder: "Envoyez un message au propriétaire du gîte."%></br>
+
+      <div class= "hidden">
+        <%= f.label :nickname %>
+        <%= f.text_field :nickname, placeholder: 'Ne pas remplir ce champ!' %>
+      </div>
+
+      <%= f.submit 'Envoyer', class: 'btn mb-5' %>
+<!--       <#% if @contact.deliver %>
+        <p>Merci</p>
+      <#% else  %>
+        <p>Le message n'a pas pu être envoyé</p>
+      <#% end %> -->
+    </div>
+  <% end %>
+  </div>
+</div>
+
+
+  <div class="col-md-6" id="flash-message">
+    <%= render 'flash' %>
+  </div>
+
+
