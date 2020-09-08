@@ -6,8 +6,6 @@
 		<div class="<%= @room.name %>"></div>
 	</div>
 
-	<%= link_to 'Version française', root_path(locale: :fr), class: "text-justify" %>
-
 	<div class="room_info">
 		<% if @room.name == 'Le grand gîte' %>
 			<%= image_tag "pont.jpg", class: 'img-round mt-3 mb-3 mx-auto d-block' %>
