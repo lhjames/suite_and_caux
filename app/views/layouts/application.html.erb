@@ -25,10 +25,6 @@
 
   <body>
     <%= render 'sidebar' %>
-    <ul>
-      <li><%= link_to 'Français', root_path(locale: :fr) %></li>
-      <li><%= link_to 'English', root_path(locale: :en) %></li>
-    </ul>
     <%= yield %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </body>
