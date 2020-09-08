@@ -1,0 +1,36 @@
+<div class="room_container container">
+
+	<h3 class='room_name text-center text-uppercase'><%= @room.name %></h3>
+
+	<div class="room_banner">
+		<div class="<%= @room.name %>"></div>
+	</div>
+
+	<%= link_to 'Version française', root_path(locale: :fr), class: "text-justify" %>
+
+	<div class="room_info">
+		<% if @room.name == 'Le grand gîte' %>
+			<%= image_tag "pont.jpg", class: 'img-round mt-3 mb-3 mx-auto d-block' %>
+			<p>Sleeping up two adults and two children, Le Grand Gîte has a modern and equipped kitchen, bathroom, living-room, Wi-Fi and TV. A perfect accommodation for a family wrapped up in a modern design.</p>
+		<% elsif @room.name == 'Le petit gîte' %>
+			<%= image_tag "table.jpg", class: 'img-round mt-3 mb-3 mx-auto d-block' %>
+			<p>Looking for a Norman getaway, alone or with your significant other, in a charming lodge? Le Petit Gîte is a perfect choice for a week-end stay, week-long vacation, or even a professional mission in Normandy.
+		<% else @room.name == 'La chambre' %>
+			<%= image_tag "petit-dej.jpg", class: 'img-round mb-3 mt-3 mx-auto d-block' %>
+			<p>Looking for hotel room amenities? Look no further: our suite welcomes you with a spacious bedroom, a living-room, and a large bathroom. A comfortable, calm loft located under roofs. As a special treat, if you book this room, the breakfast is included!</p>
+		<% end %>
+	</div>
+
+	<div class='icon_info mb-5 mt-5'>
+		<%= render 'icons' %>
+	</div>
+
+	<h5><%= @room.rate %>€ per night</h5>
+	<p class="mt-1 mb-5" id="weekly_rate">Weekly rate available</p>
+
+	<div class="d-flex flex-column justify-content-center align-items-center">
+		<%= link_to "Book", contact_index_path, class: "btn mb-5" %>	
+	</div>
+ </div>
+
+
