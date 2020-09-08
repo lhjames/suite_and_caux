@@ -1,0 +1,41 @@
+<div class="container">
+	<h1 class="home-title__dark text-center mt-5 mb-3">Explore Normandy seashore</h1>
+	<h3 class="mb-5">Click on the markers to find the owner's favorite spots ❤️ </h3>
+
+	<div id="map"
+     style="width: 100%; height: 450px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+
+  <div class="map-grid">
+	  <div class="row mt-5 mb-2">
+	  	<div class="col-sm">
+	  		<%= image_tag "pont.jpg", class: 'd-block w-100' %>
+	  		<p class="maps-legend mt-2">Veules-les-Roses beach</p>
+	  	</div>
+	  	<div class="col-sm text-center" id="maps-text">
+	  		<p>Wheter you're with family or travelling with like minded people who share a hobby, there are plenty of places to see on the 'Alabaster Coast'. Maison Esperluette is in the center of a beautiful French region: Etretat cliffs, charming villages, tasty seafood restaurants...  Nathalie, your host, knows all the good places and will be happy to share them with you!</p>
+	  	</div>
+	  </div>
+	  <div class="row mb-5">
+	  	<div class="col-sm mt-2">
+	  		<%= image_tag "falaises.jpg", class: 'd-block w-100' %>
+	  		<p class="maps-legend mt-2">The famous Etretat cliffs</p>
+	  	</div>
+	  	<div class="col-sm mt-2">
+	  		<%= image_tag "roses.jpg", class: 'd-block w-100' %>
+	  		<p class="maps-legend mt-2">Traditional Norman house in Veules-les-Roses</p>
+	  	</div>
+	  	<div class="col-sm mt-2">
+	  		<%= image_tag "phare1.jpg", class: 'd-block w-100' %>
+	  		<p class="maps-legend mt-2">Saint-Valéry-en-Caux lighthouse</p>
+	  	</div>
+	  </div>
+	  <p class='mt-2 mb-5'>Photos by <a href="https://www.instagram.com/isabelle.ah/">@isabelle.ah</a></p>
+  </div>
+
+
+
+</div>
+
