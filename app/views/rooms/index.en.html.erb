@@ -42,7 +42,7 @@
 
 				<% @rooms.drop(1).each do |room| %>
 					<div class="card_room rounded">
-						<%= link_to room_path(room), class: "" do %>
+						<%= link_to room_path(room, locale: :en), class: "" do %>
 							<% if room.name == 'Le petit gîte' %>
 								<%= image_tag "petit-gite-fenetre.jpg", class: "rounded" %>
 							<% else %>
@@ -56,7 +56,7 @@
 									<p class="mb-3">Enjoy our spacious suite</p>
 								<% end %>
 							</div>
-							<%= link_to "Discover the room", room_path(room), class: "btn btn-outline-primary sm mb-4 mt-4" %>
+							<%= link_to "Discover the room", room_path(room, locale: :en), class: "btn btn-outline-primary sm mb-4 mt-4" %>
 						<% end %>
 					</div>
 				<% end %>

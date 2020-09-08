@@ -1,0 +1,20 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4 text-center">
+			<i class="fas fa-utensils mb-3"></i>
+			<% if @room.name == 'La chambre' %>
+				<p class='icon-text__small'>Breakfast included</p>
+			<% else %>
+				<p class='icon-text__small'>Fully equipped kitchen</p>
+			<% end %>
+		</div>
+		<div class="col-sm-4 text-center">
+			<i class="fas fa-bed mb-3"></i>
+			<p class='icon-text__small'>Household linen provided</p>
+		</div>
+		<div class="col-sm-4 text-center">
+			<i class="fas fa-tree mb-3"></i>
+			<p class='icon-text__small'>Large garden</p>
+		</div>
+	</div>
+</div>
