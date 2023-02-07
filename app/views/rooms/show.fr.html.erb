@@ -14,13 +14,13 @@
 	<div class="room_info">
 		<% if @room.name == 'Le grand gîte' %>
 			<%= image_tag "pont.jpg", class: 'img-round mt-3 mb-3 mx-auto d-block' %>
-			<p>C’est le plus vaste des gîtes de la Maison Esperluette : il accueillera sans souci votre famille, et chacun aura son indépendance, tout en partageant les moments en commun dans la cuisine et le salon. Rénové en 2019, il vous offre liberté, indépendance et intimité.</p>
+			<p>C’est le plus vaste des gîtes de la Maison Esperluette : il accueillera sans souci votre famille, et chacun aura son indépendance, tout en partageant les moments en commun dans la cuisine et le salon. Rénové en 2019, il vous offre liberté, indépendance et intimité</p>
 		<% elsif @room.name == 'Le petit gîte' %>
 			<%= image_tag "table.jpg", class: 'img-round mt-3 mb-3 mx-auto d-block' %>
-			<p>Envie d’une escapade normande, seul ou à deux, dans une demeure de charme, au calme et proche de la mer ? Le Petit Gîte vous accueille confortablement, pour un week-end, une semaine, ou pour une mission professionnelle dans la région. Vous pourrez y dormir, y rêver, vous restaurer.</p>
+			<p>Envie d’une escapade normande, seul ou à deux, dans une demeure de charme, au calme et proche de la mer ? Le Petit Gîte vous accueille confortablement, pour un week-end, une semaine, ou pour une mission professionnelle dans la région. Vous pourrez y dormir, y rêver, vous restaurer</p>
 		<% else %>
 			<%= image_tag "petit-dej.jpg", class: 'img-round mb-3 mt-3 mx-auto d-block' %>
-			<p>Vous préférez les commodités d’une nuit d’hôtel, dans un espace grand comme une maison ? La Chambre de la Maison Esperluette vous attend : c’est une véritable suite, dotée d’une immense chambre, d’un salon grand comme un séjour, et d’une vaste salle de bains… le tout lové sous les toits. En plus, le petit-déjeuner est offert !</p>
+			<p>Vous préférez les commodités d’une nuit d’hôtel, dans un espace grand comme une maison ? La Chambre de la Maison Esperluette vous attend : c’est une véritable suite, dotée d’une immense chambre, d’un salon grand comme un séjour, et d’une vaste salle de bains… le tout lové sous les toits</p>
 		<% end %>
 	</div>
 
@@ -30,6 +30,7 @@
 
 	<h5><%= @room.rate %>€ la nuitée</h5>
 	<p class="mt-1 mb-5" id="weekly_rate">Possibilité de prix à la semaine</p>
+  <p class="mt-1 mb-5" id="weekly_rate">La nuitée par personne supplémentaire est à 30€ (capacité maximale de 4 personnes)</p>
 
 	<div class="d-flex flex-column justify-content-center align-items-center">
 		<%= link_to "Réserver", contact_index_path, class: "btn mb-5" %>	
